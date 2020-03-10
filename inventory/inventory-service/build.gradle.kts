@@ -4,7 +4,7 @@ plugins {
 }
 
 dependencies {
-    implementation(project(":customer:customer-cs-api"))
+    implementation(project(":inventory:inventory-service-api"))
     implementation(project(":capabilities:service-capability"))
     implementation(project(":commons:common-domain"))
 }

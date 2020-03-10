@@ -6,6 +6,6 @@ plugins {
 
 dependencies {
     implementation(project(":capabilities:app-capability"))
-    implementation(project(":weather:water-level-cs"))
-    implementation(project(":weather:wind-cs"))
+    implementation(project(":weather:water-level-service"))
+    implementation(project(":weather:wind-service"))
 }

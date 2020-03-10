@@ -6,11 +6,12 @@ plugins {
 
 dependencies {
     implementation(project(":capabilities:app-capability"))
-    implementation(project(":reservation:reservation-cs"))
-    implementation(project(":reservation:reservation-es"))
-    implementation(project(":customer:customer-cs"))
-    implementation(project(":customer:customer-es"))
-    implementation(project(":inventory:inventory-cs"))
-    implementation(project(":inventory:inventory-es"))
-    implementation(project(":dashboard:dashboard-es"))
+    implementation(project(":reservation:reservation-service"))
+    implementation(project(":reservation:reservation"))
+    implementation(project(":customer:customer-service"))
+    implementation(project(":customer:customer"))
+    implementation(project(":inventory:inventory-service"))
+    implementation(project(":inventory:inventory"))
+    implementation(project(":dashboard:dashboard"))
+    implementation(project(":weather:weather-station"))
 }

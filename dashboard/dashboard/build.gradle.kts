@@ -5,7 +5,7 @@ plugins {
 
 dependencies {
     implementation(project(":capabilities:rest-capability"))
-    implementation(project(":inventory:inventory-es-api"))
-    implementation(project(":inventory:inventory-cs-api"))
+    implementation(project(":dashboard:dashboard-api"))
+    implementation(project(":reservation:reservation-service-api"))
     implementation(project(":commons:common-domain"))
 }

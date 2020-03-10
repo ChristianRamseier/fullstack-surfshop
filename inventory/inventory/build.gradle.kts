@@ -5,7 +5,7 @@ plugins {
 
 dependencies {
     implementation(project(":capabilities:rest-capability"))
-    implementation(project(":customer:customer-es-api"))
-    implementation(project(":customer:customer-cs-api"))
+    implementation(project(":inventory:inventory-api"))
+    implementation(project(":inventory:inventory-service-api"))
     implementation(project(":commons:common-domain"))
 }

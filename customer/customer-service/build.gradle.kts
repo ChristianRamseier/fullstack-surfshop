@@ -4,7 +4,7 @@ plugins {
 }
 
 dependencies {
-    implementation(project(":reservation:reservation-cs-api"))
+    implementation(project(":customer:customer-service-api"))
     implementation(project(":capabilities:service-capability"))
     implementation(project(":commons:common-domain"))
 }

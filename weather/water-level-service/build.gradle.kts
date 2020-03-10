@@ -4,8 +4,8 @@ plugins {
 }
 
 dependencies {
+    implementation(project(":weather:water-level-service-api"))
     implementation(project(":capabilities:rest-capability"))
-    implementation(project(":dashboard:dashboard-es-api"))
-    implementation(project(":reservation:reservation-cs-api"))
+    implementation(project(":capabilities:service-capability"))
     implementation(project(":commons:common-domain"))
 }
