@@ -4,6 +4,6 @@ plugins {
 }
 
 dependencies {
-    implementation(project(":capabilities:base-capability"))
+    implementation(project(":capabilities:rest-api-capability"))
     implementation(project(":commons:common-domain"))
 }

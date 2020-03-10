@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping
 
 interface ReservationApi {
 
-    @GetMapping("/reservations")
+    @GetMapping("/reservation")
     fun getReservations(): List<ReservationDto>
 
 }

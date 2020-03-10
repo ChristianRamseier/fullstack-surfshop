@@ -11,6 +11,8 @@ import { ReservationComponent } from './reservation/reservation.component';
 import { LayoutComponent } from './commons/layout/layout.component';
 import { ButtonComponent } from './commons/button/button.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import {ReservationService} from "./reservation/service/reservation.service";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -26,6 +28,7 @@ import { NavigationComponent } from './navigation/navigation.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],

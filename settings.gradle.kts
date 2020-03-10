@@ -15,6 +15,7 @@ include(":capabilities:base-capability")
 include(":capabilities:service-capability")
 include(":capabilities:app-capability")
 include(":capabilities:rest-capability")
+include(":capabilities:rest-consumer-capability")
 include(":capabilities:rest-api-capability")
 include(":capabilities:database-capability")
 
@@ -40,8 +41,6 @@ include(":weather:wind-service")
 include(":weather:wind-service-api")
 include(":weather:water-level-service")
 include(":weather:water-level-service-api")
-include(":weather:weather-station")
-include(":weather:weather-station-api")
 
 // Deployment Modules
 include(":surfshop-app")

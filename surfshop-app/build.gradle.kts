@@ -13,5 +13,4 @@ dependencies {
     implementation(project(":inventory:inventory-service"))
     implementation(project(":inventory:inventory"))
     implementation(project(":dashboard:dashboard"))
-    implementation(project(":weather:weather-station"))
 }

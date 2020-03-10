@@ -1,3 +1,5 @@
 <app-layout title="Reservation">
-  <p>reservation works!</p>
+  <div *ngFor="let reservation of reservations">
+    {{reservation.date}}
+  </div>
 </app-layout>
