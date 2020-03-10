@@ -1,0 +1,17 @@
+.navigation {
+  display: flex;
+  a {
+    color: darkblue;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+  }
+  a:hover, a:hover {
+    color: darkblue;
+    background-color: lightblue;
+  }
+  border-bottom: 1px solid lightblue;
+  font-family: 'Roboto-Condensed';
+  font-style: normal;
+  font-weight: 400;
+}
