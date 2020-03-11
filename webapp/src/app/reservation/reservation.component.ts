@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {ReservationService} from "./service/reservation.service";
-import {ReservationDto} from "./service/reservation-dto";
+import {ReservationService} from './service/reservation.service';
+import {ReservationDto} from './service/dto/reservation-dto';
 
 @Component({
   selector: 'app-reservation',
@@ -16,7 +16,7 @@ export class ReservationComponent implements OnInit {
   ngOnInit(): void {
     this.reservationService.getReservations().subscribe(reservations => {
       this.reservations = reservations;
-    })
+    });
   }
 
 }

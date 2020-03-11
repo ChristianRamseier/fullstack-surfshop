@@ -1,3 +1,10 @@
 <app-layout title="Inventory">
-  <p>inventory works!</p>
+  <h4>Sails</h4>
+  <div *ngFor="let sail of sails">
+    {{sail.size}}m<sup>2</sup> {{sail.brand}} {{sail.model}}
+  </div>
+  <h4>Boards</h4>
+  <div *ngFor="let board of boards">
+    {{board.volume}}l {{board.brand}} {{board.model}}
+  </div>
 </app-layout>

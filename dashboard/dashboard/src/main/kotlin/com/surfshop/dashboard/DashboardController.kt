@@ -2,7 +2,7 @@ package com.surfshop.dashboard
 
 import com.surfshop.dashboard.domain.SurfConditions
 import com.surfshop.dashboard.dto.DashboardOverviewDto
-import com.surfshop.service.reservation.ReservationServiceApi
+import com.surfshop.reservation.service.ReservationServiceApi
 import com.surfshop.service.waterlevel.WaterLevelServiceApi
 import com.surfshop.service.wind.WindServiceApi
 import org.springframework.web.bind.annotation.RestController

@@ -1,15 +1,17 @@
-package com.surfshop.service.reservation.dto
+package com.surfshop.reservation.service.dto
 
 import com.surfshop.common.CustomerId
 import com.surfshop.common.ReservationId
-import com.surfshop.common.RigId
+import com.surfshop.common.BoardId
+import com.surfshop.common.SailId
 import java.time.LocalDate
 
 data class ReservationDto(
         val date: LocalDate,
         val id: ReservationId,
         val customerId: CustomerId,
-        val rigId: RigId
+        val boardId: BoardId,
+        val sailId: SailId
 ) {
 
 }
