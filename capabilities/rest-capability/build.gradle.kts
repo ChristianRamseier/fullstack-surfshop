@@ -4,6 +4,7 @@ plugins {
 }
 
 dependencies {
+    api(project(":commons:common-domain-serialization"))
     api(project(":capabilities:base-capability"))
     api(project(":capabilities:rest-api-capability"))
     api("org.springframework.boot:spring-boot-starter-web")

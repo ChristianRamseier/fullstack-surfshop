@@ -13,6 +13,7 @@ import { ButtonComponent } from './commons/button/button.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import {ReservationService} from "./reservation/service/reservation.service";
 import {HttpClientModule} from "@angular/common/http";
+import { WindDirectionPipe } from './commons/wind-direction/wind-direction.pipe';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {HttpClientModule} from "@angular/common/http";
     ReservationComponent,
     LayoutComponent,
     ButtonComponent,
-    NavigationComponent
+    NavigationComponent,
+    WindDirectionPipe
   ],
   imports: [
     BrowserModule,

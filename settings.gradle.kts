@@ -21,6 +21,7 @@ include(":capabilities:database-capability")
 
 // Common Modules
 include(":commons:common-domain")
+include(":commons:common-domain-serialization")
 
 // Functional Modules
 include(":dashboard:dashboard")
@@ -43,8 +44,8 @@ include(":weather:water-level-service")
 include(":weather:water-level-service-api")
 
 // Deployment Modules
-include(":surfshop-app")
-include(":weather:weather-services-app")
+include(":apps:surfshop-app")
+include(":apps:weather-services-app")
 
 // Webapp Module
 include(":webapp")
