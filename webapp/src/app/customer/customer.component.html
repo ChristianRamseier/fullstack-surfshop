@@ -1,3 +1,5 @@
 <app-layout title="Customer">
-  <p>customer works!</p>
+  <div *ngFor="let customer of customers">
+    {{customer.firstname}} {{customer.lastname}}
+  </div>
 </app-layout>
