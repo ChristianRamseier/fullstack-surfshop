@@ -7,10 +7,10 @@ import com.fasterxml.jackson.databind.deser.std.StdDeserializer
 class CustomDoubleDeserializer<T>(typeClass: Class<T>, private val deserializerFunction: (Double) -> T) : StdDeserializer<T>(typeClass) {
 
     override fun deserialize(p: JsonParser, ctxt: DeserializationContext): T? {
-        val double = p.valueAsDouble
+        val double: String? = p.getValueAsString(null)
         if (double == null) {
             return null
         }
-        return deserializerFunction.invoke(double)
+        return deserializerFunction.invoke(double.toDouble())
     }
 }

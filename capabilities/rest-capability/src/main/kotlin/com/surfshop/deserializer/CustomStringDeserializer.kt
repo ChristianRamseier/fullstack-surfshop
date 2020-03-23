@@ -7,7 +7,7 @@ import com.fasterxml.jackson.databind.deser.std.StdDeserializer
 class CustomStringDeserializer<T>(typeClass: Class<T>, private val deserializerFunction: (String) -> T) : StdDeserializer<T>(typeClass) {
 
     override fun deserialize(p: JsonParser, ctxt: DeserializationContext): T? {
-        val string = p.valueAsString
+        val string: String? = p.getValueAsString(null)
         if (string == null) {
             return null
         }

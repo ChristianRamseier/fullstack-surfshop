@@ -7,10 +7,10 @@ import com.fasterxml.jackson.databind.deser.std.StdDeserializer
 class CustomLongDeserializer<T>(typeClass: Class<T>, private val deserializerFunction: (Long) -> T) : StdDeserializer<T>(typeClass) {
 
     override fun deserialize(p: JsonParser, ctxt: DeserializationContext): T? {
-        val double = p.valueAsLong
-        if (double == null) {
+        val long: String? = p.getValueAsString(null)
+        if (long == null) {
             return null
         }
-        return deserializerFunction.invoke(double)
+        return deserializerFunction.invoke(long.toLong())
     }
 }
