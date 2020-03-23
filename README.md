@@ -15,7 +15,17 @@
 
 ![domain](domain.png)
 
+### Modules & Components
 
+**Functional** modules are first-class citizens in the project folder structure. Backend modules and their dependencies are enforced with Gradle.
+
+![modules](modules.png)
+ 
+**Common** modules are libraries with shared classes, logic and domain value objects. Typically they are free of framework code.
+
+**Capability** modules are used to adds behaviour to context and/or configures the framework of the module. A module with a missing capability dependency may still compile, but behave differently because the capability .
+
+**Application** modules only contain the main class with a `@SpringBootApplication` annotation, the module dependencies define what is packaged and run with it.
 ### Getting started
 
 1. Clone the repository
