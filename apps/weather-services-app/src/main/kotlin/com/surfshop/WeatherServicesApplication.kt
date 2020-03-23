@@ -4,8 +4,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class SurfshopApplication
+class WeatherServicesApplication
 
 fun main(args: Array<String>) {
-	runApplication<SurfshopApplication>(*args)
+	runApplication<WeatherServicesApplication>(*args)
 }
