@@ -1,0 +1,7 @@
+CREATE TABLE Reservation (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   date DATE,
+   board VARCHAR(20) NOT NULL,
+   sail VARCHAR(20) NOT NULL,
+   customer VARCHAR(20) NOT NULL
+);

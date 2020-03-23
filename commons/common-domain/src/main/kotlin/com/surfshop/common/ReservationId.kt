@@ -1,5 +1,5 @@
 package com.surfshop.common
 
-data class ReservationId(val id: String) {
+data class ReservationId(val id: Long) {
 
 }

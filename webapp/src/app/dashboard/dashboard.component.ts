@@ -10,6 +10,7 @@ import {DashboardOverviewDto} from "./service/dashboard-overview-dto";
 export class DashboardComponent implements OnInit {
 
   dashboardOverview: DashboardOverviewDto;
+  unavailable = false;
 
   constructor(
     private dashboardService: DashboardService
@@ -19,7 +20,9 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {
     this.dashboardService.getDashboardOverview().subscribe(dashboardOverview => {
         this.dashboardOverview = dashboardOverview;
-      });
+      }, error => {
+      this.unavailable = true;
+    });
   }
 
 }

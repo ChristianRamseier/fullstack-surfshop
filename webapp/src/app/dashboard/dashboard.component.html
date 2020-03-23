@@ -1,11 +1,18 @@
 <app-layout title="Dashboard">
+  <ng-container *ngIf="dashboardOverview && !unavailable">
   <h2>Weather</h2>
-  <p>
-    <b>{{dashboardOverview.conditionSummary}}</b>
-  </p>
-  <p>
-    Wind is {{dashboardOverview.windSpeed}} beaufort from {{dashboardOverview.windDirection | windDirection}}<br/>
-  </p>
+    <p>
+      <b>{{dashboardOverview.conditionSummary}}</b>
+    </p>
+    <p>
+      Wind is {{dashboardOverview.windSpeed}} beaufort from {{dashboardOverview.windDirection | windDirection}}<br/>
+    </p>
   <h2>Reservations</h2>
-  We have {{dashboardOverview.todaysReservations}} reservations for today.
+  <p>
+     We have {{dashboardOverview.todaysReservations}} reservations for today.
+  </p>
+  </ng-container>
+  <ng-container *ngIf="unavailable">
+    The dashboard is currently unavailable.
+  </ng-container>
 </app-layout>

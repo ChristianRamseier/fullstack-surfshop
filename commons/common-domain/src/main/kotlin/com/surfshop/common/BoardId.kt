@@ -1,5 +1,5 @@
 package com.surfshop.common
 
-data class BoardId(val id: String) {
+data class BoardId(val id: Long) {
 
 }
