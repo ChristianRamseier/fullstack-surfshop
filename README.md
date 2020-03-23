@@ -1,5 +1,10 @@
 # Surfshop - a modular fullstack application showcase
- In this modular fullstack sample application a windsurf rental software is implemented in TypeScript and Kotlin. Frameworks in use are Spring Boot, Angular and Feign.
+ In this modular fullstack sample application a windsurf rental software is implemented in TypeScript and Kotlin. Frameworks in use are:
+  - [Spring Boot](https://spring.io/projects/spring-boot)
+  - [Angular](https://angular.io/)
+  - [Feign](https://github.com/OpenFeign/feign)
+  - [H2 database](https://www.h2database.com/html/main.html)
+  - [Flyway](https://flywaydb.org/)
 
 ### Domain
 
