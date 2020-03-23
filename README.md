@@ -17,5 +17,5 @@
 2. Import the project in your IDE
 3. Build the project using `gradlew build`
 4. Run the backend applications `SurfshopApplication` and `WeatherServiceApplication`
-5. Run the frontend using `setupNode.cmd` followed by `npm start` in the `webapp` directory.
+5. Run the frontend using `setupNode.cmd` followed by `npm install` and `npm start` in the `webapp` directory.
 6. Launch http://localhost:4200 to see the shop 
