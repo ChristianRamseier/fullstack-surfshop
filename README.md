@@ -23,7 +23,7 @@
  
 **Common** modules are libraries with shared classes, logic and domain value objects. Typically they are free of framework code.
 
-**Capability** modules are used to adds behaviour to context and/or configures the framework of the module. A module with a missing capability dependency may still compile, but behave differently because the capability .
+**Capability** modules are used to add behaviour to the context and/or configure the framework of the module.
 
 **Application** modules only contain the main class with a `@SpringBootApplication` annotation, the module dependencies define what is packaged and run with it.
 ### Getting started
