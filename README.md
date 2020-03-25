@@ -17,7 +17,7 @@
 
 ### Modules & Components
 
-**Functional** modules are first-class citizens in the project folder structure. Backend modules and their dependencies are enforced with Gradle.
+**Functional** modules are first-class citizens in the project folder structure. As every backend module is a separate Gradle module, the architecture layering is enforced by the compiler.
 
 ![modules](modules.png)
  
