@@ -29,3 +29,5 @@ out/
 
 ### VS Code ###
 .vscode/
+
+!.idea

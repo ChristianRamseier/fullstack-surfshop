@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="11" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/apps" />
+            <option value="$PROJECT_DIR$/apps/surfshop-app" />
+            <option value="$PROJECT_DIR$/apps/weather-services-app" />
+            <option value="$PROJECT_DIR$/capabilities" />
+            <option value="$PROJECT_DIR$/capabilities/app-capability" />
+            <option value="$PROJECT_DIR$/capabilities/base-capability" />
+            <option value="$PROJECT_DIR$/capabilities/database-capability" />
+            <option value="$PROJECT_DIR$/capabilities/rest-api-capability" />
+            <option value="$PROJECT_DIR$/capabilities/rest-capability" />
+            <option value="$PROJECT_DIR$/capabilities/rest-consumer-capability" />
+            <option value="$PROJECT_DIR$/capabilities/service-capability" />
+            <option value="$PROJECT_DIR$/commons" />
+            <option value="$PROJECT_DIR$/commons/common-domain" />
+            <option value="$PROJECT_DIR$/commons/common-domain-serialization" />
+            <option value="$PROJECT_DIR$/customer" />
+            <option value="$PROJECT_DIR$/customer/customer" />
+            <option value="$PROJECT_DIR$/customer/customer-api" />
+            <option value="$PROJECT_DIR$/customer/customer-service" />
+            <option value="$PROJECT_DIR$/customer/customer-service-api" />
+            <option value="$PROJECT_DIR$/dashboard" />
+            <option value="$PROJECT_DIR$/dashboard/dashboard" />
+            <option value="$PROJECT_DIR$/dashboard/dashboard-api" />
+            <option value="$PROJECT_DIR$/inventory" />
+            <option value="$PROJECT_DIR$/inventory/inventory" />
+            <option value="$PROJECT_DIR$/inventory/inventory-api" />
+            <option value="$PROJECT_DIR$/inventory/inventory-service" />
+            <option value="$PROJECT_DIR$/inventory/inventory-service-api" />
+            <option value="$PROJECT_DIR$/reservation" />
+            <option value="$PROJECT_DIR$/reservation/reservation" />
+            <option value="$PROJECT_DIR$/reservation/reservation-api" />
+            <option value="$PROJECT_DIR$/reservation/reservation-service" />
+            <option value="$PROJECT_DIR$/reservation/reservation-service-api" />
+            <option value="$PROJECT_DIR$/weather" />
+            <option value="$PROJECT_DIR$/weather/water-level-service" />
+            <option value="$PROJECT_DIR$/weather/water-level-service-api" />
+            <option value="$PROJECT_DIR$/weather/wind-service" />
+            <option value="$PROJECT_DIR$/weather/wind-service-api" />
+            <option value="$PROJECT_DIR$/webapp" />
+          </set>
+        </option>
+        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
