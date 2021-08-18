@@ -16,13 +16,16 @@ include(":capabilities:base-capability")
 include(":capabilities:service-capability")
 include(":capabilities:app-capability")
 include(":capabilities:rest-capability")
+include(":capabilities:rest-capability")
 include(":capabilities:rest-consumer-capability")
 include(":capabilities:rest-api-capability")
 include(":capabilities:database-capability")
+include(":capabilities:redis-capability")
 
 // Common Modules
 include(":commons:common-domain")
 include(":commons:common-domain-serialization")
+include(":commons:common-redis")
 
 // Functional Modules
 include(":dashboard:dashboard")

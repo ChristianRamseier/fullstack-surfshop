@@ -2,8 +2,10 @@ package com.surfshop.dashboard
 
 import com.surfshop.dashboard.domain.SurfConditions
 import com.surfshop.dashboard.dto.DashboardOverviewDto
+import com.surfshop.redis.RedisService
 import com.surfshop.reservation.service.ReservationServiceApi
 import com.surfshop.service.waterlevel.WaterLevelServiceApi
+import com.surfshop.service.waterlevel.dto.WindDto
 import com.surfshop.service.wind.WindServiceApi
 import org.springframework.web.bind.annotation.RestController
 import java.time.LocalDate
@@ -12,9 +14,15 @@ import java.time.LocalDate
 class DashboardController(
         val reservationService: ReservationServiceApi,
         val windServiceApi: WindServiceApi,
-        val waterLevelApi: WaterLevelServiceApi
+        val waterLevelApi: WaterLevelServiceApi,
+        val redisService: RedisService
 ) : DashboardApi {
 
+    init {
+        redisService.onMessage(WindDto.TOPIC) { message: WindDto ->
+            println(message)
+        }
+    }
     override fun getOverview(): DashboardOverviewDto {
         val reservations = reservationService.getReservations()
         val wind = windServiceApi.getWind()
