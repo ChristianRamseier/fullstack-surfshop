@@ -16,4 +16,4 @@ INSERT INTO Customer VALUES (1, 'Samuel', 'Felipe');
 INSERT INTO Customer VALUES (2, 'Robin', 'Kieler');
 INSERT INTO Customer VALUES (3, 'Regina', 'Arnold');
 
-INSERT INTO Reservation VALUES (1, '2000-02-20', 1, 1, 3);
+INSERT INTO Reservation VALUES (1, '2021-08-20', 1, 1, 3);
