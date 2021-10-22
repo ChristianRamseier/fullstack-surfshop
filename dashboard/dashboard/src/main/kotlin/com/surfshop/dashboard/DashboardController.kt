@@ -5,10 +5,12 @@ import com.surfshop.dashboard.dto.DashboardOverviewDto
 import com.surfshop.reservation.service.ReservationServiceApi
 import com.surfshop.service.waterlevel.WaterLevelServiceApi
 import com.surfshop.service.wind.WindServiceApi
+import org.jmolecules.architecture.layered.InterfaceLayer
 import org.springframework.web.bind.annotation.RestController
 import java.time.LocalDate
 
 @RestController
+@InterfaceLayer
 class DashboardController(
         val reservationService: ReservationServiceApi,
         val windServiceApi: WindServiceApi,

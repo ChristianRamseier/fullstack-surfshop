@@ -3,7 +3,9 @@ package com.surfshop.dashboard.domain
 import com.surfshop.common.Direction
 import com.surfshop.common.Meters
 import com.surfshop.common.Speed
+import org.jmolecules.architecture.layered.DomainLayer
 
+@DomainLayer
 class SurfConditions(
         private val speed: Speed,
         private val direction: Direction,
